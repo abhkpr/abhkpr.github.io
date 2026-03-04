@@ -1,0 +1,29 @@
+baseURL = "https://abhkpr.github.io/"
+languageCode = "en-us"
+title = "Abhishek Kumar"
+theme = "warbird"
+paginate = 5
+
+[params]
+  description = "thoughts, projects and notes"
+  author = "Abhishek Kumar"
+  github = "https://github.com/abhkpr"
+  notes = "https://abhkpr.github.io/notes"
+
+[menu]
+  [[menu.main]]
+    name = "home"
+    url = "/"
+    weight = 1
+  [[menu.main]]
+    name = "blog"
+    url = "/blog"
+    weight = 2
+  [[menu.main]]
+    name = "projects"
+    url = "/projects"
+    weight = 3
+  [[menu.main]]
+    name = "about"
+    url = "/about"
+    weight = 4

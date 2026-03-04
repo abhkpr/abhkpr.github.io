@@ -1,0 +1,26 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="hero-patch">PILOT</div>
+    <h1 class="hero-title">{{ .Site.Params.author }}</h1>
+    <p class="hero-sub">{{ .Site.Params.description }}</p>
+    <div class="hero-links">
+        <a href="/blog" class="btn">— mission log —</a>
+        <a href="/about" class="btn">— briefing —</a>
+        <a href="{{ .Site.Params.notes }}" class="btn" target="_blank">— field notes —</a>
+        <a href="{{ .Site.Params.github }}" class="btn" target="_blank">— hangar —</a>
+    </div>
+</section>
+
+<section class="latest">
+    <h2 class="section-title">// latest transmissions</h2>
+    <div class="post-list">
+        {{ range first 3 (where .Site.RegularPages "Section" "blog") }}
+        <div class="post-card">
+            <span class="post-date">{{ .Date.Format "02 Jan 2006" }}</span>
+            <a href="{{ .RelPermalink }}" class="post-title">{{ .Title }}</a>
+            <p class="post-summary">{{ .Summary }}</p>
+        </div>
+        {{ end }}
+    </div>
+</section>
+{{ end }}

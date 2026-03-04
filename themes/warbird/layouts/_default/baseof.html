@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ .Title }} | {{ .Site.Title }}</title>
+    <link rel="stylesheet" href="/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&family=Share+Tech+Mono&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="nav">
+            <div class="nav-brand">
+                <span class="nav-callsign">✈</span>
+                <a href="/">{{ .Site.Title }}</a>
+            </div>
+            <ul class="nav-links">
+                {{ range .Site.Menus.main }}
+                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
+                {{ end }}
+            </ul>
+        </nav>
+    </header>
+
+    <main class="main-content">
+        {{ block "main" . }}{{ end }}
+    </main>
+
+    <footer>
+        <div class="footer-content">
+            <span>{{ .Site.Params.author }}</span>
+            <span class="footer-links">
+                <a href="{{ .Site.Params.github }}" target="_blank">github</a>
+                <a href="{{ .Site.Params.notes }}" target="_blank">notes</a>
+            </span>
+            <span>{{ now.Year }}</span>
+        </div>
+    </footer>
+</body>
+</html>

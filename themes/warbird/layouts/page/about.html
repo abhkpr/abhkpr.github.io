@@ -1,0 +1,12 @@
+{{ define "main" }}
+<div class="about-header">
+    <h1>// briefing</h1>
+</div>
+<div class="about-content">
+    {{ .Content }}
+    <div class="social-links">
+        <a href="{{ .Site.Params.github }}" target="_blank">github</a>
+        <a href="{{ .Site.Params.notes }}" target="_blank">notes</a>
+    </div>
+</div>
+{{ end }}

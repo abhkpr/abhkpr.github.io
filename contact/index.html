@@ -34,15 +34,77 @@
 
     <main class="main-content">
         
-<article class="single-post">
-    <div class="post-header">
-        <h1>Contact</h1>
-        <span class="post-meta">04 Mar 2026</span>
+<div class="contact-page">
+    <div class="about-header">
+        <h1>// contact</h1>
+        <p class="section-sub">send a transmission</p>
     </div>
-    <div class="post-content">
-        
+
+    <div class="contact-form">
+        <div id="form-success" class="form-success" style="display:none;">
+            ✈ message received. will respond shortly.
+        </div>
+
+        <div id="form-error" class="form-error" style="display:none;">
+            ✖ something went wrong. try again.
+        </div>
+
+        <div class="form-group">
+            <label for="name">// name</label>
+            <input type="text" id="name" placeholder="your name" />
+        </div>
+
+        <div class="form-group">
+            <label for="email">// email</label>
+            <input type="email" id="email" placeholder="your@email.com" />
+        </div>
+
+        <div class="form-group">
+            <label for="message">// message</label>
+            <textarea id="message" rows="6" placeholder="your message here..."></textarea>
+        </div>
+
+        <button onclick="sendMessage()" class="btn-submit">— transmit —</button>
     </div>
-</article>
+</div>
+
+<script>
+async function sendMessage() {
+    var name = document.getElementById('name').value.trim();
+    var email = document.getElementById('email').value.trim();
+    var message = document.getElementById('message').value.trim();
+
+    if (!name || !email || !message) {
+        alert('please fill all fields');
+        return;
+    }
+
+    var btn = document.querySelector('.btn-submit');
+    btn.textContent = '— transmitting... —';
+    btn.disabled = true;
+
+    try {
+        await fetch('https://script.google.com/macros/s/AKfycbw8uq6OL7RDE_gIq64AAwqvVXMl8pF_1cyV3NUZ0xDt4joTdZQ-2VwTwwYV_BW7oVSF/exec', {
+            method: 'POST',
+            mode: 'no-cors',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({ name, email, message })
+        });
+
+        document.getElementById('form-success').style.display = 'block';
+        document.getElementById('name').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+        btn.textContent = '— transmit —';
+        btn.disabled = false;
+
+    } catch(err) {
+        document.getElementById('form-error').style.display = 'block';
+        btn.textContent = '— transmit —';
+        btn.disabled = false;
+    }
+}
+</script>
 
     </main>
 

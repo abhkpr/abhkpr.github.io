@@ -35,3 +35,7 @@ paginate = 5
     name = "about"
     url = "/about"
     weight = 5
+  [[menu.main]]
+    name = "contact"
+    url = "/contact"
+    weight = 6

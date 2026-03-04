@@ -1,0 +1,22 @@
+{{ define "main" }}
+<article class="research-paper">
+    <div class="paper-header">
+        <div class="paper-tag">{{ .Params.field }}</div>
+        <h1>{{ .Title }}</h1>
+        <div class="paper-meta">
+            <span>{{ .Date.Format "02 Jan 2006" }}</span>
+            {{ if .Params.status }}
+            <span class="paper-status">{{ .Params.status }}</span>
+            {{ end }}
+        </div>
+        {{ if .Params.abstract }}
+        <div class="paper-abstract">
+            <strong>Abstract —</strong> {{ .Params.abstract }}
+        </div>
+        {{ end }}
+    </div>
+    <div class="post-content">
+        {{ .Content }}
+    </div>
+</article>
+{{ end }}

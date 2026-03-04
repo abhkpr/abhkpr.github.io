@@ -9,18 +9,19 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="nav-callsign">✈</span>
-                <a href="/">{{ .Site.Title }}</a>
-            </div>
-            <ul class="nav-links">
-                {{ range .Site.Menus.main }}
-                <li><a href="{{ .URL }}">{{ .Name }}</a></li>
-                {{ end }}
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav">
+        <div class="nav-brand">
+            <span class="nav-callsign">✈</span>
+            <a href="/">{{ .Site.Title }}</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            {{ range .Site.Menus.main }}
+            <li><a href="{{ .URL }}" onclick="toggleMenu()">{{ .Name }}</a></li>
+            {{ end }}
+        </ul>
+    </nav>
+</header>
 
     <main class="main-content">
         {{ block "main" . }}{{ end }}
@@ -36,5 +37,11 @@
             <span>{{ now.Year }}</span>
         </div>
     </footer>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('open');
+}
+</script>
 </body>
 </html>

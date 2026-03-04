@@ -1,9 +1,9 @@
 ---
-title: "Your Research Title Here"
+title: "Research Goels"
 date: 2026-03-04
 field: "Computer Science"
 status: "ongoing"
-abstract: "A brief one paragraph summary of what this research is about, what you investigated and what you found."
+abstract: "What this research is about, what you investigated and what you found."
 ---
 
 ## Introduction

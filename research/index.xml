@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Researches on Abhishek Kumar</title>
+    <link>https://abhishekkumar.xyz/research/</link>
+    <description>Recent content in Researches on Abhishek Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Wed, 04 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abhishekkumar.xyz/research/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Your Research Title Here</title>
+      <link>https://abhishekkumar.xyz/research/my-first-research/</link>
+      <pubDate>Wed, 04 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://abhishekkumar.xyz/research/my-first-research/</guid>
+      <description>Introduction what is the problem you&amp;rsquo;re investigating and why does it matter.&#xA;Methodology how did you approach this. what tools, methods, sources did you use.&#xA;Findings what did you find. be specific and clear.&#xA;Conclusion what does this mean. what are the implications.&#xA;References Author, Title, Year, Link Author, Title, Year, Link </description>
+    </item>
+  </channel>
+</rss>

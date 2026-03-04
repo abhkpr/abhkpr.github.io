@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Abhishek Kumar</title>
+    <link>https://abhkpr.github.io/</link>
+    <description>Recent content on Abhishek Kumar</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 01 Mar 2026 00:00:00 +0000</lastBuildDate>
+    <atom:link href="https://abhkpr.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>About</title>
+      <link>https://abhkpr.github.io/about/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://abhkpr.github.io/about/</guid>
+      <description>callsign: Abhishek Kumar&#xA;student. developer. competitive programmer. building things, breaking things, learning along the way.&#xA;currently flying with:&#xA;linux + vim + i3wm c++ for competitive programming python for everything else markdown for notes and thoughts this site is my corner of the internet — thoughts, projects, and whatever else i feel like sharing.</description>
+    </item>
+    <item>
+      <title>First Flight</title>
+      <link>https://abhkpr.github.io/blog/first-flight/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://abhkpr.github.io/blog/first-flight/</guid>
+      <description>every journey starts somewhere. this is mine.</description>
+    </item>
+    <item>
+      <title>Projects</title>
+      <link>https://abhkpr.github.io/projects/</link>
+      <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
+      <guid>https://abhkpr.github.io/projects/</guid>
+      <description>notes site my personal knowledge base, written in markdown and hosted online. visit →&#xA;this site personal blog and portfolio built with Hugo. visit →</description>
+    </item>
+  </channel>
+</rss>

@@ -9,28 +9,29 @@
 </head>
 <body>
     <header>
-        <nav class="nav">
-            <div class="nav-brand">
-                <span class="nav-callsign">✈</span>
-                <a href="/">Abhishek Kumar</a>
-            </div>
-            <ul class="nav-links">
-                
-                <li><a href="/">home</a></li>
-                
-                <li><a href="/blog">blog</a></li>
-                
-                <li><a href="/projects">projects</a></li>
-                
-                <li><a href="/research">research</a></li>
-                
-                <li><a href="/about">about</a></li>
-                
-                <li><a href="/contact">contact</a></li>
-                
-            </ul>
-        </nav>
-    </header>
+    <nav class="nav">
+        <div class="nav-brand">
+            <span class="nav-callsign">✈</span>
+            <a href="/">Abhishek Kumar</a>
+        </div>
+        <button class="hamburger" onclick="toggleMenu()">☰</button>
+        <ul class="nav-links" id="nav-menu">
+            
+            <li><a href="/" onclick="toggleMenu()">home</a></li>
+            
+            <li><a href="/blog" onclick="toggleMenu()">blog</a></li>
+            
+            <li><a href="/projects" onclick="toggleMenu()">projects</a></li>
+            
+            <li><a href="/research" onclick="toggleMenu()">research</a></li>
+            
+            <li><a href="/about" onclick="toggleMenu()">about</a></li>
+            
+            <li><a href="/contact" onclick="toggleMenu()">contact</a></li>
+            
+        </ul>
+    </nav>
+</header>
 
     <main class="main-content">
         
@@ -65,5 +66,11 @@
             <span>2026</span>
         </div>
     </footer>
+<script>
+function toggleMenu() {
+    var menu = document.getElementById('nav-menu');
+    menu.classList.toggle('open');
+}
+</script>
 </body>
 </html>

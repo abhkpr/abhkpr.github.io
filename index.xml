@@ -41,7 +41,7 @@
       <link>https://abhishekkumar.xyz/projects/</link>
       <pubDate>Sun, 01 Mar 2026 00:00:00 +0000</pubDate>
       <guid>https://abhishekkumar.xyz/projects/</guid>
-      <description>notes site my personal knowledge base, written in markdown and hosted online. visit →&#xA;this site personal blog and portfolio. visit →</description>
+      <description>notes site my personal knowledge base, written in markdown and hosted online. visit →&#xA;this site personal blog and portfolio. visit →&#xA;StudentOS a student productivity app — day planner, micro goals, daily learning logs, ai coach and github style progress tracking. built with react, supabase, groq ai and deployed on vercel. visit → github →</description>
     </item>
   </channel>
 </rss>
